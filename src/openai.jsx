@@ -1,7 +1,7 @@
 const { OpenAI } = require('openai'); // Use `OpenAI` directly instead of `Configuration`
 
 const openai = new OpenAI({
-    //apiKey: process.env.OPENAI_API_KEY
+    apiKey: process.env.OPENAI_API_KEY
 });
 
 export async function sendMsgToOpenAI(message) {
